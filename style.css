@@ -54,6 +54,4 @@
   .model-viewer {
     text-align: center;
     margin-top: 20px;
-    width: 100%; /* Set the width to occupy the full width of the container */
-    height: 80vh; /* Set the height to 80% of the viewport height */
   }
