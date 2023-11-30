@@ -29,20 +29,28 @@
     <button class="add-to-cart">Add to Cart</button>
   </div>
 
-  <div class="model-viewer">
-    <!-- Model Viewer content goes here -->
-   <model-viewer src="./3Dfiles/chair/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate style="width: 100%; height: 80vh;">
-      <div class="progress-bar hide" slot="progress-bar">
+  <div class="content-wrapper">
+    <div class="model-viewer">
+      <!-- Model Viewer content goes here -->
+      <model-viewer src="./3Dfiles/chair/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate style="width: 100%; height: 80vh;">
+        <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
+        </div>
+        <button slot="ar-button" id="ar-button">
           View in your space
-      </button>
-      <div id="ar -prompt">
+        </button>
+        <div id="ar-prompt">
           <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-      </div>
-   </model-viewer>
-    
+        </div>
+      </model-viewer>
+    </div>
+
+    <div class="product-shots">
+      <!-- Placeholder images for product shots -->
+      <img src="path/to/product-shot-1.jpg" alt="Product Shot 1">
+      <img src="path/to/product-shot-2.jpg" alt="Product Shot 2">
+      <!-- Add more product shots here -->
+    </div>
   </div>
 
 </body>
