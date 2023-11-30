@@ -75,6 +75,7 @@
   /* Style for the description paragraph */
   .description {
     margin: 20px;
+    width: 800px;
   }
 
  .description p {
