@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Furniture Website</title>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="notice-bar">
-    <p>Free shipping over $80</p>
+    <p>Free local shipping over CA$80</p>
   </div>
 
   <nav class="navigation">
@@ -22,15 +26,57 @@
   </nav>
 
   <div class="product">
-    <h2>Lamp</h2>
-    <p>49cm(W) x 50xm(L) x 85cm(H)</p>
-    <p>$30</p>
+    <div class="product-info">
+      <h2>Floor Lamp</h2>
+      <p class="color">Orange / Yellow</p>
+      <p>150cm(H)</p>
+      <p class="price">CA$20</p>
+    </div>
     <button class="add-to-cart">Add to Cart</button>
   </div>
 
-  <div class="model-viewer">
-    <!-- Model Viewer content goes here -->
+  <div class="content-wrapper">
+    <div class="model-viewer">
+      <!-- Model Viewer content goes here -->
+      <model-viewer src="./3Dfiles/lamp/lamp.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="0.7" auto-rotate shadow-softness="1" style="width: 90%; height: 80vh;">
+        <button class="Hotspot" slot="hotspot-1" data-position="-0.033896925285208726m 1.7615648046141834m -0.3060103500899468m" data-normal="-0.043598781764584045m 0.03164853899404825m -0.9985477035215627m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Sanded SPF</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="0.15823383894779675m 0.8529824877798039m 0.01082648756288418m" data-normal="0.9562708269060021m 0.18538185612963798m 0.22622924883056422m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Glossy Terracotta </div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+    </model-viewer>
+    
+    
+    </div>
+
+    <div class="product-shots">
+      <!-- Placeholder images for product shots -->
+      <img src="/3Dfiles/lamp/lamp_images/lamp-1.png" alt="Product Shot 1">
+      <img src="/3Dfiles/lamp/lamp_images/lamp-2.png" alt="Product Shot 2">
+      <!-- Add more product shots here -->
+    </div>
   </div>
 
+  <!-- Description paragraph -->
+  <div class="description">
+    <p>
+      This stunning floor lamp brings a touch of contemporary elegance to any room. Crafted with a captivating wooden pattern and an eye-catching orange stand, this piece effortlessly blends style and functionality. Its sleek design exudes warmth and modernity, adding a distinctive allure to your space. Emitting a soft and inviting glow, this floor lamp serves as both a statement piece and a source of ambient lighting, illuminating your surroundings with sophistication and charm.
+      </p>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2023 Furniture Website. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </footer>
 </body>
 </html>

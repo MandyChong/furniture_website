@@ -3,22 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open sans";
   }
   
   /* Notice bar styles */
   .notice-bar {
     background-color: #f2f2f2;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
   }
   
   .notice-bar p {
     margin: 0;
+    font-weight: 400;
+    font-size: 13px;
   }
   
   /* Navigation bar styles */
   .navigation {
     background-color: #333;
+    padding: 0px 120px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
   }
   
   .navigation ul {
@@ -39,15 +47,51 @@
   
   /* Product styles */
   .product {
+    display: flex;
+    justify-content: space-between; /* Aligns items at both ends */
+    align-items: flex-start; /* Aligns items to the top */
     margin: 20px;
+    padding: 30px 120px;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
   }
   
   .product h2 {
     margin-bottom: 5px;
+    font-family: "Urbanist";
+    font-size: 28px;
+  }
+
+  .color {
+    font-size: 19px;
+  }
+  
+  .price {
+    font-size: 25px;
+    padding: 5px 0px;
+    font-family: "Urbanist";
+    font-weight: 600;
   }
   
   .add-to-cart {
-    float: right;
+    background-color: #fff;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    outline: 0;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: 18px;
+    font-family: "Urbanist";
+    font-weight: 700;
   }
   
   /* New styles for layout */
@@ -67,18 +111,55 @@
 
   /* Style for individual product shot images */
   .product-shots img {
-    width: 100%; /* Ensure images take full width of their container */
+    width: 420px; /* Ensure images take full width of their container */
     display: block; /* Prevent any extra spacing */
-    margin-bottom: 10px; /* Adjust spacing between images */
+    margin-bottom: 30px; /* Adjust spacing between images */
   }
 
   /* Style for the description paragraph */
   .description {
     margin: 20px;
-    width: 800px;
+    padding: 30px 120px 80px 120px;
   }
 
  .description p {
     text-align: left;
-    /* Add other styling for the description text if necessary */
+    font-size: 13px;
+  }
+
+  /* Footer style */
+  .site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+  }
+  
+  .site-footer p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 5px 0;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 300;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Style for the annotation text */
+  .HotspotAnnotation {
+    font-size: 15px; 
+    padding: 5px 10px;
   }

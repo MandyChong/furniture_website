@@ -6,11 +6,14 @@
   <title>Furniture Website</title>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="notice-bar">
-    <p>Free shipping over $80</p>
+    <p>Free local shipping over CA$80</p>
   </div>
 
   <nav class="navigation">
@@ -22,33 +25,41 @@
     </ul>
   </nav>
 
-  <div class="product"> 
-    <h2>Wooden Chair</h2>
-    <p>49cm(W) x 50xm(L) x 85cm(H)</p>
-    <p>$30</p>
+  <div class="product">
+    <div class="product-info">
+      <h2>Wooden Chair</h2>
+      <p class="color">Orange / Pink / Green / Yellow</p>
+      <p>49cm(W) x 50xm(L) x 85cm(H)</p>
+      <p class="price">CA$30</p>
+    </div>
     <button class="add-to-cart">Add to Cart</button>
   </div>
 
   <div class="content-wrapper">
     <div class="model-viewer">
       <!-- Model Viewer content goes here -->
-      <model-viewer src="./3Dfiles/chair/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1" auto-rotate style="width: 90%; height: 80vh;">
+      <model-viewer id="dimension-demo" ar ar-modes="webxr" ar-scale="fixed" camera-orbit="-30deg auto auto" max-camera-orbit="auto 100deg auto" shadow-intensity="1" camera-controls touch-action="pan-y" src="/3Dfiles/chair/chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="0.7" auto-rotate shadow-softness="1" style="width: 90%; height: 80vh;">
+        <button class="Hotspot" slot="hotspot-1" data-position="-0.09620945292643661m 0.6760913531421147m -0.07627773793762692m" data-normal="6.107864704680649e-7m 0.9999999999996879m 5.012597948918123e-7m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Sanded SPF</div>
+          </button><button class="Hotspot" slot="hotspot-3" data-position="-0.017957573073822397m 0.21821311924546163m 0.162969117946275m" data-normal="-0.9999999999996407m -1.3618543459798865e-7m -8.366259584557945e-7m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Glossy Terracotta </div>
+        </button>
         <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
+            <div class="update-bar"></div>
         </div>
         <button slot="ar-button" id="ar-button">
-          View in your space
+            View in your space
         </button>
-        <div id="ar-prompt">
-          <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-        </div>
-      </model-viewer>
+       
+    </model-viewer>
+    
+    
     </div>
 
     <div class="product-shots">
       <!-- Placeholder images for product shots -->
-      <img src="/3Dfiles/chair/chair_images/chair1-3.png" alt="Product Shot 1">
-      <img src="/3Dfiles/chair/chair_images/chair1-4.png" alt="Product Shot 2">
+      <img src="/3Dfiles/chair/chair_images/chair1-1.png" alt="Product Shot 1">
+      <img src="/3Dfiles/chair/chair_images/chair1-3.png" alt="Product Shot 2">
       <!-- Add more product shots here -->
     </div>
   </div>
@@ -56,9 +67,17 @@
   <!-- Description paragraph -->
   <div class="description">
     <p>
-      This easy-to-place conference chair with gently curved lines accentuated by sewn details is kind to your body and pleasant to look at. The tilt and height-adjusting mechanism enables individual comfort.
+      This beautifully crafted wooden chair embodies simplicity and elegance. Featuring a sleek, handle-less design with a sturdy build, it offers both comfort and style for any space. Its distinctive red legs add a vibrant touch, complementing its versatile nature. With a choice of four distinct colors, this chair harmonizes functionality with aesthetics, making it an ideal addition to any modern setting.
       </p>
   </div>
 
+  <footer class="site-footer">
+    <p>&copy; 2023 Furniture Website. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
