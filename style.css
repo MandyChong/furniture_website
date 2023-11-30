@@ -71,3 +71,13 @@
     display: block; /* Prevent any extra spacing */
     margin-bottom: 10px; /* Adjust spacing between images */
   }
+
+  /* Style for the description paragraph */
+  .description {
+    margin: 20px;
+  }
+
+ .description p {
+    text-align: left;
+    /* Add other styling for the description text if necessary */
+  }
