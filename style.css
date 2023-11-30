@@ -1,32 +1,73 @@
-/* Add or modify styles as needed */
-
 /* Resetting default margin and padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Notice bar styles */
+  .notice-bar {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .notice-bar p {
+    margin: 0;
+  }
+  
+  /* Navigation bar styles */
+  .navigation {
+    background-color: #333;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .navigation li {
+    margin: 0 10px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Product styles */
+  .product {
+    margin: 20px;
+  }
+  
+  .product h2 {
+    margin-bottom: 5px;
+  }
+  
+  .add-to-cart {
+    float: right;
+  }
+  
+  /* New styles for layout */
+  .content-wrapper {
+    display: flex;
+  }
 
-/* ... (Your existing styles remain unchanged) */
+  .model-viewer {
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Adjust the maximum width */
+  }
 
-/* New styles for layout */
-.content-wrapper {
-  display: flex;
-}
+  .product-shots {
+    max-width: 40%; /* Adjust the maximum width */
+    /* Add other styling for product shots if necessary */
+  }
 
-.model-viewer {
-  flex: 1; /* Take up available space */
-  max-width: 60%; /* Adjust the maximum width */
-}
-
-.product-shots {
-  max-width: 40%; /* Adjust the maximum width */
-  /* Add other styling for product shots if necessary */
-}
-
-/* Style for individual product shot images */
-.product-shots img {
-  width: 100%; /* Ensure images take full width of their container */
-  display: block; /* Prevent any extra spacing */
-  margin-bottom: 10px; /* Adjust spacing between images */
-}
+  /* Style for individual product shot images */
+  .product-shots img {
+    width: 100%; /* Ensure images take full width of their container */
+    display: block; /* Prevent any extra spacing */
+    margin-bottom: 10px; /* Adjust spacing between images */
+  }
